@@ -588,8 +588,8 @@ describe('AuthService – Refresh Tokens', () => {
     };
 
     beforeEach(() => {
-      findMock = refreshTokenRepository.find as jest.Mock;
-      findOneMock = refreshTokenRepository.findOne as jest.Mock;
+      findMock = refreshTokenRepository.find;
+      findOneMock = refreshTokenRepository.findOne;
     });
 
     describe('getActiveSessions', () => {
